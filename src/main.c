@@ -33,9 +33,7 @@ static const char *TAG = "example";
 
 void app_main() {
     sys_delay_ms(5000);
-    for(int i = 0; i < 30; i++){
-        ESP_LOGI(TAG, "Initializing SPIFFS");
-    }
+    ESP_LOGI(TAG, "Initializing SPIFFS");
     esp_vfs_spiffs_conf_t conf = {
       .base_path = "/spiffs",
       .partition_label = NULL,
